@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houssam Bouhaja | Portfolio Marketing Digital</title>
+    <meta name="description" content="Portfolio de Houssam Bouhaja, étudiant en Marketing Digital et Commercial à l'EST Salé.">
+    
+    <!-- Tailwind CSS (Framework de style moderne) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome (Pour les icônes) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Animation Classes */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #2563eb, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-bold text-xl text-blue-600">HB.</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#accueil" class="hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition">Accueil</a>
+                        <a href="#about" class="hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition">À propos</a>
+                        <a href="#competences" class="hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition">Compétences</a>
+                        <a href="#portfolio" class="hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition">Réalisations</a>
+                        <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition shadow-lg hover:shadow-blue-500/30">Me contacter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="reveal active">
+                <span class="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-600 text-sm font-semibold mb-4">Marketing Digital & Commercial</span>
+                <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">
+                    Bonjour, je suis <br>
+                    <span class="gradient-text">Houssam Bouhaja</span>
+                </h1>
+                <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-500 mb-8">
+                    Étudiant passionné de 19 ans à l'EST Salé. Je transforme les données en stratégies et les idées en visuels impactants.
+                </p>
+                <div class="flex justify-center gap-4">
+                    <!-- Bouton Télécharger CV : Remplacez 'mon_cv.pdf' par le vrai nom de votre fichier sur GitHub -->
+                    <a href="./mon_cv.pdf" download class="group flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition shadow-lg hover:shadow-blue-500/30">
+                        <i class="fas fa-download mr-2 group-hover:animate-bounce"></i> Télécharger mon CV
+                    </a>
+                    <a href="#contact" class="flex items-center px-6 py-3 border border-slate-300 text-base font-medium rounded-md text-slate-700 bg-white hover:bg-slate-50 transition">
+                        Me contacter
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative blobs -->
+        <div class="absolute top-0 left-0 -ml-20 -mt-20 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-72 h-72 bg-cyan-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="reveal">
+                    <!-- Placeholder pour votre photo -->
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-blue-600 rounded-2xl rotate-6 opacity-20"></div>
+                        <img src="https://placehold.co/600x600/2563eb/ffffff?text=Houssam+Bouhaja" alt="Houssam Bouhaja" class="relative rounded-2xl shadow-xl w-full object-cover">
+                    </div>
+                </div>
+                <div class="reveal">
+                    <h2 class="text-3xl font-bold mb-6">À propos de moi</h2>
+                    <p class="text-slate-600 mb-4 leading-relaxed">
+                        Actuellement en première année à l'<strong>École Supérieure de Technologie de Salé</strong>, j'ai obtenu mon Baccalauréat en Sciences Économiques avec Mention Bien.
+                    </p>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Ma force réside dans ma double compétence : la rigueur de l'analyse économique et commerciale, combinée à une créativité débordante en design et photographie. J'ai déjà mis ces compétences à l'épreuve lors d'un stage chez <strong>Agence AMTIC</strong> et à travers divers projets freelance.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
+                            <i class="fas fa-graduation-cap text-blue-600 text-2xl mb-2"></i>
+                            <h3 class="font-bold">Formation</h3>
+                            <p class="text-sm text-slate-500">EST Salé & Bac Éco (Bien)</p>
+                        </div>
+                        <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
+                            <i class="fas fa-briefcase text-blue-600 text-2xl mb-2"></i>
+                            <h3 class="font-bold">Expérience</h3>
+                            <p class="text-sm text-slate-500">Stage Agence & Freelance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="competences" class="py-20 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl font-bold mb-4">Mes Compétences</h2>
+                <p class="text-slate-600">Un mélange d'outils techniques et de savoir-être.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition reveal border-t-4 border-blue-600">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-laptop-code text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Digital & Tech</h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Marketing Digital</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Meta Ads (FB/Insta)</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> HTML & Informatique</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> MS Office (Expert)</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition reveal border-t-4 border-cyan-500">
+                    <div class="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-paint-brush text-cyan-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Créatif & Design</h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Création de Logos</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Affiches Publicitaires</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Photographie Pro</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Montage Vidéo</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition reveal border-t-4 border-indigo-500">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-indigo-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Analyse & Gestion</h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Analyse SPSS & NVivo</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Gestion de Projet</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Leadership</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Communication Pro</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio/Experience Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl font-bold mb-4">Mes Réalisations</h2>
+                <p class="text-slate-600">Un aperçu de mon parcours professionnel et créatif.</p>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Item 1 -->
+                <div class="flex flex-col md:flex-row gap-8 items-center reveal">
+                    <div class="w-full md:w-1/2 bg-slate-100 h-64 rounded-xl flex items-center justify-center overflow-hidden group relative">
+                         <!-- Remplacez par vos images -->
+                         <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                             <span class="text-white font-bold">Agence AMTIC</span>
+                         </div>
+                         <i class="fas fa-bullhorn text-6xl text-slate-300"></i>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-2xl font-bold mb-2">Stage Marketing & Com - Agence AMTIC</h3>
+                        <p class="text-slate-500 mb-4">1 mois | Salé</p>
+                        <p class="text-slate-600 mb-4">
+                            J'ai eu l'opportunité de créer <strong>2 logos professionnels</strong> et <strong>3 affiches</strong> pour une école privée. J'ai également rédigé <strong>4 articles optimisés</strong> (SEO) sur l'économie et la culture digitale.
+                        </p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 text-xs rounded-full font-bold">Design</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 text-xs rounded-full font-bold">Rédaction</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="flex flex-col md:flex-row-reverse gap-8 items-center reveal">
+                    <div class="w-full md:w-1/2 bg-slate-100 h-64 rounded-xl flex items-center justify-center overflow-hidden group relative">
+                         <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                             <span class="text-white font-bold">Freelance</span>
+                         </div>
+                         <i class="fas fa-camera text-6xl text-slate-300"></i>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-2xl font-bold mb-2">Photographe & Vidéaste Freelance</h3>
+                        <p class="text-slate-500 mb-4">Projets Divers</p>
+                        <p class="text-slate-600 mb-4">
+                            Couverture complète d'événements (anniversaires, mariages, réunions d'école). Je gère la prise de vue, le montage vidéo et le post-traitement des images pour livrer un rendu professionnel.
+                        </p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-600 text-xs rounded-full font-bold">Photographie</span>
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-600 text-xs rounded-full font-bold">Montage</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="reveal">
+                <h2 class="text-3xl font-bold mb-6">Travaillons ensemble !</h2>
+                <p class="text-slate-300 mb-12">
+                    Disponible pour des stages ou des projets freelance en marketing digital et graphisme.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <a href="tel:+212605764183" class="flex flex-col items-center p-6 bg-slate-800 rounded-xl hover:bg-slate-700 transition">
+                        <i class="fas fa-phone-alt text-3xl text-blue-400 mb-4"></i>
+                        <span class="text-lg font-semibold">Téléphone</span>
+                        <span class="text-slate-400">+212 605 764 183</span>
+                    </a>
+                    <a href="mailto:bouhajahoussam234@Gmail.com" class="flex flex-col items-center p-6 bg-slate-800 rounded-xl hover:bg-slate-700 transition">
+                        <i class="fas fa-envelope text-3xl text-blue-400 mb-4"></i>
+                        <span class="text-lg font-semibold">Email</span>
+                        <span class="text-slate-400 break-all">bouhajahoussam234@Gmail.com</span>
+                    </a>
+                </div>
+
+                <div class="flex justify-center space-x-6">
+                    <a href="https://www.linkedin.com/" target="_blank" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-600 hover:-translate-y-1 transition duration-300">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center hover:bg-pink-600 hover:-translate-y-1 transition duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-800 hover:-translate-y-1 transition duration-300">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                </div>
+                
+                <p class="mt-12 text-slate-500 text-sm">
+                    © 2024 Houssam Bouhaja. Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script pour l'animation au scroll -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const reveals = document.querySelectorAll('.reveal');
+
+            const revealOnScroll = () => {
+                const windowHeight = window.innerHeight;
+                const elementVisible = 150;
+
+                reveals.forEach((reveal) => {
+                    const elementTop = reveal.getBoundingClientRect().top;
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveal.classList.add('active');
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', revealOnScroll);
+            revealOnScroll(); // Trigger once on load
+        });
+    </script>
+</body>
+</html>
